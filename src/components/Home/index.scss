@@ -76,3 +76,14 @@
         }
     }
 }
+
+    
+.fade-in-iframe {
+    width: 40%;  // Adjust width as necessary
+    height: 100vh; // Adjust height as necessary
+    padding-right: 5%;
+    float: right;
+    border: none; // Optional: remove border
+    opacity: 0; // Start hidden
+    transition: opacity 1s ease-in; // Smooth transition
+  }

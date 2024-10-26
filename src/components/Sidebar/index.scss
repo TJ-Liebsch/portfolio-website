@@ -7,19 +7,22 @@
     z-index: 3;
     min-height: 500px;
 
+    .subtitle {
+        font-size: 14px;
+        font-family: 'Coolvetica';
+        text-align: center;
+        color: white;
+    }
+
     .logo {
       display: block;
-      padding: 8px 0;
-      
+      padding-top: 8px 0;
+    
       img {
         display: block;
         margin: 8px auto;
-        width: 24px;
+        width: 36px;
         height: auto;
-
-        &.sub-logo {
-            width: 50px;
-        }
       }
     }
 
@@ -59,7 +62,7 @@
             
             &:after {
                 content: '';
-                font-size: 9px;
+                font-size: 8px;
                 letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
@@ -80,6 +83,12 @@
         a.about-link {
             &:after {
                 content: 'ABOUT';
+            }
+        }
+
+        a.projects-link {
+            &:after {
+                content: 'PROJECTS';
             }
         }
 

@@ -1,0 +1,66 @@
+h2 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+  color: #fff;
+}
+
+a {
+  color: #ffd700;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text {
+  font-size: 18px;
+  margin: 10px 0; // Add some margin for spacing
+  width: 97%;
+}
+
+.skills {
+  font-size: 14px;
+  margin: 10px 0; // Add some margin for spacing
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between; // Spread categories across the width
+  width: 100%; // Ensure the container takes full width
+  margin-top: 20px; // Adjust margin as needed
+  justify-content: center; // Center images horizontally
+}
+  
+.project-category {
+  width: 100%; // Make each category take full width
+  margin: 20px 0; // Add some margin between categories  
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center images within the category
+}
+
+.project-image {
+  position: relative;
+  flex: 1 1 200px; // Allow images to grow and shrink with a minimum size
+  margin: 10px; // Add margin around images
+  transition: transform 0.3s ease;
+}
+
+.project-image img {
+  width: 80%; // Ensure images take full width of their parent
+  height: auto; // Maintain aspect ratio
+}
+
+.project-image.selected img {
+  transform: scale(1.2); // Scale up the selected image
+  z-index: 1; // Bring the selected image above others
+}

@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
-  faAngular,
-  faCss3,
   faGitAlt,
-  faHtml5,
-  faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
+import cppLogo from '../../assets/images/c++Logo.png'
+import csharpLogo from '../../assets/images/csharpLogo.png'
+import gcpLogo from '../../assets/images/gcpLogo.png'
+import pythonLogo from '../../assets/images/pythonLogo.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,6 +15,13 @@ import './index.scss'
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
+  useEffect(() => {
+      const idTimeOut = setTimeout(() => {
+          setLetterClass('text-animate-hover')
+      }, 3000)
+
+      return ()=> clearTimeout(idTimeOut);
+  },[])
 
   return (
     <>
@@ -28,37 +35,39 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm a college student graduating in May of 2025, 
+            and I am looking for a job that can fit my skills in 
+            AI, Full Stack Development, or Game Development.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I have always been interested in all of those fields as I used each of those in my first ever personal project, pacman.
+            That project and a few other reasons are the reason why I want to work in the Software Engineering field.
+            Which is why I'd like to work for you.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            Despite being a soon to be graduate, 
+            I have a series of Professional and Personal Projects 
+            that have led me to being proficent with quite a few skills. 
+            Of which you can see on my RESUME
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <img src={csharpLogo} alt='csharpLogo' />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+              <img src={pythonLogo} alt='pythonLogo' />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <img src={gcpLogo} alt='gcpLogo' />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <img src={cppLogo} alt='cppLogo' />
             </div>
             <div className="face6">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />

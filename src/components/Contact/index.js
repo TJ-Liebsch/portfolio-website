@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
@@ -9,6 +9,14 @@ import './index.scss'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
+
+  useEffect(() => {
+      const idTimeOut = setTimeout(() => {
+          setLetterClass('text-animate-hover')
+      }, 3000)
+
+      return ()=> clearTimeout(idTimeOut);
+  },[])
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -38,9 +46,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am interested in a junior developer position in AI, Full Stack development, or Game development. 
+            However, I might be open to other opportunities so don't be afraid to reach out
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -77,24 +84,6 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Slobodan Gajić,
-          <br />
-          Serbia,
-          <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
