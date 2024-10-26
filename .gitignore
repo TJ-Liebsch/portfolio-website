@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#token security
+/public/index.html
+
 # testing
 /coverage
 
