@@ -22,7 +22,9 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('seviceId', 'template', form.current, {
+        publicKey: 'Public key',
+      })
       .then(
         () => {
           alert('Message successfully sent!')
