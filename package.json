@@ -1,5 +1,5 @@
 {
-  "homepage": "https://tj-liebsch.github.io/Portfolio-Website",
+  "homepage": ".",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -49,6 +49,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "gh-pages": "^6.2.0"
   }
 }

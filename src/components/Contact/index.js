@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
@@ -18,24 +16,6 @@ const Contact = () => {
       return ()=> clearTimeout(idTimeOut);
   },[])
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
-      .sendForm('seviceId', 'template', form.current, {
-        publicKey: 'Public key',
-      })
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
-
   return (
     <>
       <div className="container contact-page">
@@ -49,42 +29,22 @@ const Contact = () => {
           </h1>
           <p>
             I am interested in a junior developer position in AI, Full Stack development, or Game development. 
-            However, I might be open to other opportunities so don't be afraid to reach out
+            However, I might be open to other opportunities 
+            so don't be afraid to reach out. 
           </p>
-          <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+          <div className='contact-links'>
+            <p>  
+              You can reach out to me via:
+            </p>
               <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
+                <li>My phone number: 605-270-3534</li>
+                <li>My email: TJLiebsch@go.stcloudstate.edu</li>
+                <li>Or my LinkedIn page in the bottom left</li>
               </ul>
-            </form>
+            <p> 
+              I am available 10-6 thoughout the week, and 
+              I will get back to you sometime the same week.
+            </p>
           </div>
         </div>
       </div>
