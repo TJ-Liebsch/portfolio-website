@@ -75,11 +75,11 @@ const Projects = () => {
           Description: Myself and 3 others were working for Saint Michael Cinema to create a Event Planner Website. 
           Equipped with an Admin View and options for all three of their different types of events. 
           I mainly was the backend developer for this project, and only developed 2 pages in the final website. 
-          I connected the database to the website by making my own API requests and posts with C++. 
+          I connected the database to the website by making my own API requests and posts with C#. 
           At the end of this project we presented this our client and lead software engineer to check our requirements.
         </span>
       ), 
-      skills: 'Skills: SQL, Azure, API, React, C++, Git, Agile Methodology, Public Speaking' },
+      skills: 'Skills: SQL, Azure, API, React, C#, Git, Agile Methodology, Public Speaking' },
     { src: portfolio, alt: 'Portfolio Home Page', title: 'This Portfolio', 
       text: (
         <span>
