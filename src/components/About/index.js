@@ -35,7 +35,7 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a college student graduating in May of 2025, 
+            I'm a new Software Engineering graduate from St. Cloud State University, 
             and I am looking for a job that can fit my skills in 
             AI, Full Stack Development, or Game Development.
           </p>
@@ -45,10 +45,10 @@ const About = () => {
             Which is why I'd like to work for you.
           </p>
           <p>
-            Despite being a soon to be graduate, 
-            I have a series of Professional and Personal Projects 
+            While at St. Cloud State University, 
+            I have done a series of Professional and Personal Projects 
             that have led me to being proficent with quite a few skills. 
-            Of which you can see on my RESUME
+            A few of which you can see on that cube to the right.
           </p>
         </div>
 

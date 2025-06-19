@@ -38,7 +38,7 @@ const Contact = () => {
             </p>
               <ul>
                 <li>My phone number: 605-270-3534</li>
-                <li>My email: TJLiebsch@go.stcloudstate.edu</li>
+                <li>My email: TJLiebsch@outlook.com</li>
                 <li>Or my LinkedIn page in the bottom left</li>
               </ul>
             <p> 
