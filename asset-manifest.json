@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.90829b4d.css",
+    "main.js": "/portfolio-website/static/js/main.a43db2cf.js",
+    "static/js/453.1378131f.chunk.js": "/portfolio-website/static/js/453.1378131f.chunk.js",
+    "static/media/syllabus.png": "/portfolio-website/static/media/syllabus.85532db9214e9743edac.png",
+    "static/media/TJ L. Resume.pdf": "/portfolio-website/static/media/TJ L. Resume.28a86f5fc925de508ea4.pdf",
+    "static/media/smcWeb.png": "/portfolio-website/static/media/smcWeb.16f88de825ff97b237fc.png",
+    "static/media/csharpLogo.png": "/portfolio-website/static/media/csharpLogo.456d41f630085700b5d8.png",
+    "static/media/dynamo.png": "/portfolio-website/static/media/dynamo.14e893bbcb12da954ace.png",
+    "static/media/TJL_Logo.png": "/portfolio-website/static/media/TJL_Logo.11b1029ebc904523a5fd.png",
+    "static/media/quizify.png": "/portfolio-website/static/media/quizify.903ba0dfd3d64aed79a2.png",
+    "static/media/portfolio.png": "/portfolio-website/static/media/portfolio.002ea3c16e403f6b8028.png",
+    "static/media/worksheet.png": "/portfolio-website/static/media/worksheet.075db305ae48d717a19e.png",
+    "static/media/c++Logo.png": "/portfolio-website/static/media/c++Logo.9373bd0f3f34e52a8e02.png",
+    "static/media/undergrad.jpg": "/portfolio-website/static/media/undergrad.ee70ac47449cdb025963.jpg",
+    "static/media/helvetica-neu.ttf": "/portfolio-website/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/portfolio-website/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/LaBelleAurore.woff2": "/portfolio-website/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff": "/portfolio-website/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/portfolio-website/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/portfolio-website/index.html",
+    "main.90829b4d.css.map": "/portfolio-website/static/css/main.90829b4d.css.map",
+    "main.a43db2cf.js.map": "/portfolio-website/static/js/main.a43db2cf.js.map",
+    "453.1378131f.chunk.js.map": "/portfolio-website/static/js/453.1378131f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90829b4d.css",
+    "static/js/main.a43db2cf.js"
+  ]
+}
