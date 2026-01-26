@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
-import TJL_Resume from '../../assets/TJ L. Resume.pdf'
+import TJL_Resume from '../../assets/TJ L Resume.pdf'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -11,7 +11,7 @@ const Home = () => {
   const fName = ['T', 'J']
   const lName = ['L', 'i', 'e', 'b', 's', 'c', 'h']
   const software = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e']
-  const engineering = ['E', 'n', 'g', 'i', 'n', 'e', 'e', 'r', 'i', 'n', 'g']
+  const engineering = ['E', 'n', 'g', 'i', 'n', 'e', 'e', 'r']
 
 
   useEffect(() => {
