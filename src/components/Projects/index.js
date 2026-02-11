@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react'
-import smcWeb from '../../assets/images/projects/smcWeb.png'
+import { Link } from 'react-router-dom'
+import smcWeb from '../../assets/images/projects/full/smcWeb.png'
 // import smcApi from '../../assets/images/projects/smcApi.png'
 // import smcData from '../../assets/images/projects/smcData.png'
-import portfolio from '../../assets/images/projects/portfolio.png'
+import portfolio from '../../assets/images/projects/full/portfolio.png'
 
-import quizify from '../../assets/images/projects/quizify.png'
-import dynamo from '../../assets/images/projects/dynamo.png'
-import worksheet_gen from '../../assets/images/projects/worksheet.png'
-import syllabus_gen from '../../assets/images/projects/syllabus.png'
+import quizify from '../../assets/images/projects/ai/quizify.png'
+import dynamo from '../../assets/images/projects/ai/dynamo.png'
+import worksheet_gen from '../../assets/images/projects/ai/worksheet.png'
+import syllabus_gen from '../../assets/images/projects/ai/syllabus.png'
 
-import pacman from '../../assets/images/projects/pacman.png'
-import undergrad from '../../assets/images/projects/undergrad.jpg'
+import pacman from '../../assets/images/projects/game/pacman.png'
+import undergrad from '../../assets/images/projects/game/undergrad.jpg'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -23,7 +24,7 @@ const aiImages = [
     title: 'Quizify',
     text: 'Full-stack quiz platform with user auth and analytics.',
     skills: 'React, Node.js, MongoDB',
-    link: '/projects/quizify'
+    link: 'AI/Quizify'
   },
   {
     src: dynamo,
@@ -31,7 +32,7 @@ const aiImages = [
     title: 'Dynamo',
     text: 'Workflow automation dashboard.',
     skills: 'React, Express, PostgreSQL',
-    link: '/projects/dynamo'
+    link: 'AI/Dynamo'
   },
   {
     src: worksheet_gen,
@@ -150,13 +151,10 @@ const Projects = () => {
             <h3>{image.title}</h3>
             <p>{image.text}</p>
 
-            <a
-              href={image.link}
-              className="project-card-link"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <Link to={image.link} className="project-card-link">
               Learn More →
-            </a>
+            </Link>
+
           </div>
         </div>
       ))}

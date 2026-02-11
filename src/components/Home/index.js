@@ -1,13 +1,22 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import {
+  faGitAlt,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons'
+import cppLogo from '../../assets/images/c++Logo.png'
+import csharpLogo from '../../assets/images/csharpLogo.png'
+import gcpLogo from '../../assets/images/gcpLogo.png'
+import pythonLogo from '../../assets/images/pythonLogo.png'
 import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
-import TJL_Resume from '../../assets/TJ L Resume.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const [showIframe, setShowIframe] = useState(false);
+  const [showCube, setShowCube] = useState(false)
+  const [spinCube, setSpinCube] = useState(false)
   const fName = ['T', 'J']
   const lName = ['L', 'i', 'e', 'b', 's', 'c', 'h']
   const software = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e']
@@ -15,12 +24,23 @@ const Home = () => {
 
 
   useEffect(() => {
-      const idTimeOut = setTimeout(() => {
+      const textTimeOut = setTimeout(() => {
           setLetterClass('text-animate-hover');
-          setShowIframe(true);
       }, 4000)
 
-      return ()=> clearTimeout(idTimeOut);
+      const cubeTimeOut = setTimeout(() => {
+          setShowCube(true)
+      }, 3000)
+
+      const cubeSpinTimeout = setTimeout(() => {
+          setSpinCube(true)
+      }, 4000)
+
+      return ()=> {
+        clearTimeout(textTimeOut);
+        clearTimeout(cubeTimeOut);
+        clearTimeout(cubeSpinTimeout);
+      }
   },[])
 
   return (
@@ -49,15 +69,28 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className='resume'>
-        {showIframe && (
-          <iframe 
-            src={TJL_Resume} 
-            className="fade-in-iframe"
-            style={{ opacity: 0, transition: 'opacity 1s' }} // Set initial opacity
-            onLoad={(e) => { e.target.style.opacity = 1; }} // Fade in effect on load
-          ></iframe>
-        )}
+
+      <div className={`stage-cube-cont ${showCube ? 'cube-visible' : ''}`}>
+        <div className={`cubespinner ${spinCube ? 'spin' : 'paused'}`}>
+          <div className="face1">
+            <img src={csharpLogo} alt='csharpLogo' />
+          </div>
+          <div className="face2">
+            <img src={pythonLogo} alt='pythonLogo' />
+          </div>
+          <div className="face3">
+            <img src={gcpLogo} alt='gcpLogo' />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face5">
+            <img src={cppLogo} alt='cppLogo' />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+          </div>
+        </div>
       </div>
 
       <Loader type="pacman" />

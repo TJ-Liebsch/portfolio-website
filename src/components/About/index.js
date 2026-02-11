@@ -1,23 +1,17 @@
 import { useEffect, useState } from 'react'
-import {
-  faGitAlt,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import cppLogo from '../../assets/images/c++Logo.png'
-import csharpLogo from '../../assets/images/csharpLogo.png'
-import gcpLogo from '../../assets/images/gcpLogo.png'
-import pythonLogo from '../../assets/images/pythonLogo.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import TJL_Resume from '../../assets/TJ L Resume.pdf'
 import './index.scss'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [showIframe, setShowIframe] = useState(false);
 
   useEffect(() => {
       const idTimeOut = setTimeout(() => {
           setLetterClass('text-animate-hover')
+          setShowIframe(true);
       }, 3000)
 
       return ()=> clearTimeout(idTimeOut);
@@ -52,27 +46,15 @@ const About = () => {
           </p>
         </div>
 
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <img src={csharpLogo} alt='csharpLogo' />
-            </div>
-            <div className="face2">
-              <img src={pythonLogo} alt='pythonLogo' />
-            </div>
-            <div className="face3">
-              <img src={gcpLogo} alt='gcpLogo' />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <img src={cppLogo} alt='cppLogo' />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
-          </div>
+        <div className='resume'>
+          {showIframe && (
+            <iframe 
+              src={TJL_Resume} 
+              className="fade-in-iframe"
+              style={{ opacity: 0, transition: 'opacity 1s' }} // Set initial opacity
+              onLoad={(e) => { e.target.style.opacity = 1; }} // Fade in effect on load
+            ></iframe>
+          )}
         </div>
       </div>
       <Loader type="pacman" />
