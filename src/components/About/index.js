@@ -49,6 +49,7 @@ const About = () => {
         <div className='resume'>
           {showIframe && (
             <iframe 
+              title="resume"
               src={TJL_Resume} 
               className="fade-in-iframe"
               style={{ opacity: 0, transition: 'opacity 1s' }} // Set initial opacity

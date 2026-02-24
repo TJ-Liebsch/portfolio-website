@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { useRef } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import LinkedInPage from '../../assets/images/LinkedIn Page.png'
 import './index.scss'
@@ -8,7 +7,6 @@ import './index.scss'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const [showImg, setShowImg] = useState(false);
-  const form = useRef()
 
   useEffect(() => {
       const idTimeOut = setTimeout(() => {

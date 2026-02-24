@@ -1,8 +1,20 @@
 import { useEffect, useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
+import dynamo from '../../../../assets/images/projects/ai/dynamo.png'
+import dynamoVideo from '../../../../assets/images/projects/ai/Dynamo Video.gif'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../../../AnimatedLetters'
 import './index.scss'
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+
+const media = [
+  { type: "image", src: dynamo, alt: "Dynamo" },
+  { type: "video", src: dynamoVideo, alt: "Dynamo video link", href: "https://www.loom.com/share/274ff7a7f9ec4aa0bbe10529f8c7f84b?sid=8560275c-ebd4-4c04-90f1-e44bece9ccd0", label: "Watch Demo"}
+];
 
 const Dynamo = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -10,84 +22,107 @@ const Dynamo = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000)
+    }, 4000)
 
     return () => clearTimeout(timeout)
   }, [])
 
   return (
     <>
-      <div className="container project-page">
-        <div className="project-hero">
+      <div className="container dynamo">
+        <div className="dynamo-text">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[...'Dungeon Puzzle Poker']}
+              strArray={[...'Mission Dynamo']}
               idx={15}
             />
           </h1>
 
           <div className="project-content">
-            <div className="project-image">
-              {/* <img
-                src={require('../../assets/dungeon-puzzle-poker.png')}
-                alt="Dungeon Puzzle Poker Gameplay"
-              /> */}
+            <div 
+              className="project-image"
+              // onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
+            >
+              <Swiper
+                navigation={true}
+                modules={[Autoplay, Navigation]}
+                loop
+                autoplay={{ delay: 7000, disableOnInteraction: false, pauseOnMouseEnter: true}}
+                className="mySwiper"
+              >
+                {media.map((item, i) => (
+                  <SwiperSlide key={i}>
+                    {item.type === "link" ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="media-link"
+                      >
+                        <img src={item.src} alt="" />
+                        <div className="overlay">▶ Watch Video</div>
+                      </a>
+                    ) : (
+                      <img src={item.src} alt="" />
+                    )}
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
 
             <div className="project-description">
-              <h2>About Dungeon Puzzle Poker</h2>
+              <h2>About Mission Dynamo</h2>
               <p>
-                Dungeon Puzzle Poker is a unique blend of strategy, roguelike progression,
-                and card-based combat, where every enemy is a poker hand and every battle
-                is a puzzle. Each dungeon floor is procedurally generated, ensuring every
-                run feels fresh and unpredictable.
+                Mission Dynamo is an AI Development project tasked assisting students by 
+                creating easy to study flashcards from sorce material. To acomplish this, I used a RAG pipeline 
+                that would summarize the the users youtube video into easy to understand flashcards from the important information.
+                This gave students the oprotunity to study the youtube video's key concepts so the students wouldn't miss the important information.
               </p>
               <p>
-                Your goal is to clear the grid by crafting your own poker hands to outmatch
-                enemy hands. Choose from a variety of attack shapes, rotate them to hit
-                your targets, and strategically place your cards to maximize multipliers.
-              </p>
-              <p>
-                As you progress, spend your gold wisely to unlock new shapes and cast
-                powerful spells that alter suits, discard cards, or otherwise change the
-                tide of battle. Every three dungeon levels, you'll recover before diving
-                deeper into increasingly difficult challenges.
+                I completed this project while at Radical X. 
+                There I learned everything I could from those around me.
+                While there, we communicated by Slack and held weekly meetings 
+                to confirm we all knew what we were doing that week.
+                We also used Github for our version control and Notion for a project roadmap.
               </p>
 
               <a
                 className="play-button"
-                href="https://your-game-link-here.com"
+                href="https://www.loom.com/share/274ff7a7f9ec4aa0bbe10529f8c7f84b?sid=8560275c-ebd4-4c04-90f1-e44bece9ccd0"
                 target="_blank"
                 rel="noreferrer"
               >
-                ▶ Play Now
+                ▶ Watch demonstration video
+                {/* ▶ Play Now */}
               </a>
             </div>
           </div>
         </div>
 
-        <div className="tech-section">
+        <div className="dynamo-skills">
           <h2>Technologies & Skills</h2>
-          <ul className="tech-list">
-            <li>Unreal Engine 5</li>
-            <li>Blueprint Visual Scripting</li>
-            <li>Procedural Level Generation</li>
-            <li>Card Hand Evaluation Logic</li>
-            <li>Turn-Based Combat Systems</li>
-            <li>Grid-Based Gameplay Systems</li>
-            <li>Custom Attack Pattern Rotation & Placement</li>
-            <li>Spell & Ability Systems</li>
-            <li>Resource Management Systems</li>
-            <li>Custom Widgets (UI)</li>
-            <li>HUD Design</li>
-            <li>Difficulty Scaling & Replayability</li>
+          <ul className="skills-list">
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Retrieval Augmented Generation (RAG)</li>
+            <li>Google Cloud Platform (GCP)</li>
+            <li>Vertex AI</li>
+            <li>AI Summarization</li>
+            <li>Generative AI Development</li>
+            <li>Few-shot Prompt Engineering</li>
+            <li>API Development</li>
+            <li>Cloud Based Storage</li>
+            <li>Streamlit</li>
+            <li>Git</li>
+            <li>Public Speaking</li>
           </ul>
         </div>
-
-        <Link to="/projects" className="back-link">
-          ← Back to Projects
-        </Link>
+        <div className="projects-link">
+          <Link to="/projects" className="back-link">
+            ← Back to Projects
+          </Link>
+        </div>
       </div>
 
       <Loader type="pacman" />

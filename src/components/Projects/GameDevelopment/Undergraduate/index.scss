@@ -1,0 +1,177 @@
+.undergraduate {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 3rem;
+  box-sizing: border-box;
+  color: #e5e7eb;
+}
+
+.undergraduate-text {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.undergraduate-text h1 {
+  font-size: 53px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.project-image {
+  width: 700px; /* Adjust to your desired width */
+  height: 300px; /* Adjust to your desired height */
+  margin: auto; /* Center the swiper if desired */
+  background: linear-gradient(145deg, #1f2933, #111827);
+  padding: 1.5rem;
+  margin-left: -20px;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-image img {
+  width: auto;
+  height: 300px;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+// .media-link {
+//   position: relative;
+//   display: block;
+
+//   img {
+//     width: 100%;
+//     border-radius: 12px;
+//   }
+
+//   .overlay {
+//     position: absolute;
+//     inset: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-weight: 600;
+//     background: rgba(0, 0, 0, 0.45);
+//     color: white;
+//     opacity: 0;
+//     transition: opacity 0.3s ease;
+//   }
+
+//   &:hover .overlay {
+//     opacity: 1;
+//   }
+// }
+
+.project-description {
+  margin-top: -40px;
+}
+
+.project-description h2 {
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.project-description p {
+  line-height: 1.7;
+  font-size: 12px;
+  margin-bottom: 1.2rem;
+  color: #d1d5db;
+}
+
+.play-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.6rem;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(124, 58, 237, 0.45);
+}
+
+.undergraduate-skills {
+  max-width: 1400px;
+  margin: 6rem auto 0;
+  padding: 3rem;
+  background: rgba(17, 24, 39, 0.7);
+  border-radius: 1.25rem;
+}
+
+.undergraduate-skills h2 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  padding: 0.55rem 1rem;
+  background: rgba(31, 41, 55, 0.9);
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #e5e7eb;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    font-weight: 500;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.85rem 1.6rem;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.projects-link {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero h1 {
+    font-size: 2.75rem;
+  }
+}

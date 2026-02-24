@@ -7,11 +7,19 @@ import portfolio from '../../assets/images/projects/full/portfolio.png'
 
 import quizify from '../../assets/images/projects/ai/quizify.png'
 import dynamo from '../../assets/images/projects/ai/dynamo.png'
-import worksheet_gen from '../../assets/images/projects/ai/worksheet.png'
+// import worksheet_gen from '../../assets/images/projects/ai/worksheet.png'
 import syllabus_gen from '../../assets/images/projects/ai/syllabus.png'
+import audiobook_gen from '../../assets/images/projects/ai/justSpectograph.png'
+
 
 import pacman from '../../assets/images/projects/game/pacman.png'
 import undergrad from '../../assets/images/projects/game/undergrad.jpg'
+import aiGame from '../../assets/images/projects/game/aiGameOpening.png'
+import cubey from '../../assets/images/projects/game/Cubey2.png'
+import gameDevClass from '../../assets/images/projects/game/Class game bowling.png'
+import dnd from '../../assets/images/projects/game/D&D world map.jpg'
+
+
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -34,21 +42,29 @@ const aiImages = [
     skills: 'React, Express, PostgreSQL',
     link: 'AI/Dynamo'
   },
-  {
-    src: worksheet_gen,
-    alt: 'Worksheet Generator',
-    title: 'Worksheet Generator',
-    text: 'AI-powered worksheet generation tool.',
-    skills: 'Python, NLP, OpenAI',
-    link: '/projects/worksheet-generator'
-  },
+  // {
+  //   src: worksheet_gen,
+  //   alt: 'Worksheet Generator',
+  //   title: 'Worksheet Generator',
+  //   text: 'AI-powered worksheet generation tool.',
+  //   skills: 'Python, NLP, OpenAI',
+  //   link: '/projects/worksheet-generator'
+  // },
   {
     src: syllabus_gen,
     alt: 'Syllabus Generator',
     title: 'Syllabus Generator',
     text: 'Automated syllabus creation using AI.',
     skills: 'Python, LLMs',
-    link: '/projects/syllabus-generator'
+    link: 'AI/SyllabusGenerator'
+  },
+  {
+    src: audiobook_gen,
+    alt: 'Audiobook Generator',
+    title: 'Audiobook Generator',
+    text: 'Audiobook Generator using Open Source AI.',
+    skills: 'Python, LLMs, Open Source Technologies',
+    link: 'AI/Audiobook'
   }
 ]
 
@@ -59,7 +75,7 @@ const gameImages = [
     title: 'Pacman',
     text: 'A pacman clone that I made at the end of highschool',
     skills: 'Unity, C#, Game Design',
-    link: '/projects/pacman'
+    link: 'GameDevelopment/Pacman'
   },
   {
     src: undergrad,
@@ -67,8 +83,40 @@ const gameImages = [
     title: 'Applied Undergraduate Research Project',
     text: 'A game that teachs the beginner concepts of C++',
     skills: 'Unity, C#, 3D Design',
-    link: '/projects/undergrad'
-  }
+    link: 'GameDevelopment/Undergraduate'
+  },
+  {
+    src: aiGame,
+    alt: 'AI Game Development Project',
+    title: 'AI Game Development Project',
+    text: "A truly limitless game thanks to AI's flexibility",
+    skills: 'Unity, C#, AI Development',
+    link: 'GameDevelopment/AIGame'
+  },
+  {
+    src: dnd,
+    alt: 'Dungeons and Dragons',
+    title: 'Dungeons and Dragons',
+    text: "Built detailed worlds through creative storytelling",
+    skills: 'Story Telling, Problem Solving',
+    link: 'GameDevelopment/D&D'
+  },
+  {
+    src: gameDevClass,
+    alt: 'All Game Dev Class Games',
+    title: 'All Game Dev Class Games',
+    text: "The culmination of my projects in my game development class",
+    skills: 'Unity, C#, Menu Systems',
+    link: 'GameDevelopment/GameDevClass'
+  },
+  {
+    src: cubey,
+    alt: 'Cubey Combination',
+    title: 'Cubey Combination',
+    text: "The result of my first ever Game Jam",
+    skills: 'Unity, C#, 2D Movement',
+    link: 'GameDevelopment/Cubey'
+  },
 ]
 
 const fullStackImages = [

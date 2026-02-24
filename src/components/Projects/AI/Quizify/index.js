@@ -4,6 +4,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
 import quizify from '../../../../assets/images/projects/ai/quizify.png'
 import quizifyVideo from '../../../../assets/images/projects/ai/Quizify Video.gif'
+import storageAndAPI from'../../../../assets/images/projects/ai/firebaseAndAPI.png'
 import aiRawResult from '../../../../assets/images/projects/ai/worksheet.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../../../AnimatedLetters'
@@ -14,8 +15,9 @@ import 'swiper/css/navigation';
 
 const media = [
   { type: "image", src: quizify, alt: "Quizify" },
-  { type: "video", src: quizifyVideo, alt: "Quizify video link", href: "https://www.loom.com/share/23eba195ca614e16b112813d92fed34e", label: "Watch Demo"},
-  { type: "image", src: aiRawResult, alt: "Raw result of the AI"}
+  { type: "video", src: quizifyVideo, alt: "Quizify video link", href: "https://www.loom.com/share/23eba195ca614e16b112813d92fed34e", label: "Watch Demo" },
+  { type: "image", src: storageAndAPI, alt: "Firbase cloud storage and API" },
+  { type: "image", src: aiRawResult, alt: "Raw result of the AI" }
 ];
 
 const Quizify = () => {
@@ -24,7 +26,7 @@ const Quizify = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000)
+    }, 4000)
 
     return () => clearTimeout(timeout)
   }, [])
