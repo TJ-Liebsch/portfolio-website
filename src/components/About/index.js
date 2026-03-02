@@ -33,7 +33,7 @@ const About = () => {
             I am looking for a job that can fit my skills in 
             AI, Full Stack Development, or Game Development.
           </p>
-          <p align="LEFT">
+          <p>
             I have always been interested in those fields as I used them in my first ever personal project, a Pacman Clone.
             That project, and many others, have taught me software development skills over the past 6 years.
             However, I'd like to use my skills to help your company and if that interests you, feel free to reach out.
@@ -45,7 +45,7 @@ const About = () => {
             I then sought out my AWS Certified AI Practitioner Certificate and achieved that goal on January 9th, 2026. 
           </p>
           <p>
-            Now I am trying to take my degree, certificate, and experience to develop software to further advance the industry.
+            Now I am taking my degree, certificate, and experience to develop software to further advance the industry.
           </p>
         </div>
 
