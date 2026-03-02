@@ -44,7 +44,7 @@ const Contact = () => {
                   <li>Or my LinkedIn page in the bottom left</li>
                 </ul>
               <p> 
-                I am available 10-6 thoughout the week, and 
+                I am available 10-6 throughout the week, and 
                 I will get back to you sometime the same week.
               </p>
             </div>

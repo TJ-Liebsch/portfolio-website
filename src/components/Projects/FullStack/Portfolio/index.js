@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
-import dynamo from '../../../../assets/images/projects/ai/dynamo.png'
-import dynamoVideo from '../../../../assets/images/projects/ai/Dynamo Video.gif'
+import homePage from '../../../../assets/images/projects/full/portfolio.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../../../AnimatedLetters'
 import './index.scss'
@@ -12,11 +11,10 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 
 const media = [
-  { type: "image", src: dynamo, alt: "Dynamo" },
-  { type: "video", src: dynamoVideo, alt: "Dynamo video link", href: "https://www.loom.com/share/274ff7a7f9ec4aa0bbe10529f8c7f84b?sid=8560275c-ebd4-4c04-90f1-e44bece9ccd0", label: "Watch Demo"}
+  { type: "image", src: homePage, alt: "Portfolio Website Homepage" },
 ];
 
-const Dynamo = () => {
+const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
@@ -29,12 +27,12 @@ const Dynamo = () => {
 
   return (
     <>
-      <div className="container dynamo">
-        <div className="dynamo-text">
+      <div className="container portfolioPage">
+        <div className="portfolioPage-text">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[...'Mission Dynamo']}
+              strArray={[...'Portfolio Website']}
               idx={15}
             />
           </h1>
@@ -72,50 +70,33 @@ const Dynamo = () => {
             </div>
 
             <div className="project-description">
-              <h2>About Mission Dynamo</h2>
+              <h2>About my Online Portfolio</h2>
               <p>
-                Mission Dynamo is an AI Development project tasked assisting students by 
-                creating easy to study flashcards from source material. To accomplish this, I used a RAG pipeline 
-                that would summarize the users' YouTube video into easy to understand flashcards from important information.
-                This gave students the opportunity to study the YouTube video's key concepts so the students wouldn't miss the important information.
+                After working as a backend developer for Saint Michael Cinema, I wanted to practice my Frontend Skills.
+                Therefore, I challenged myself to create an online portfolio to showcase my skills.
+                One of the skills I learned was how to host this website with GitHub pages.
+                What you are seeing is the newest build; however, I have been continuously updating it since fall 2024.
               </p>
               <p>
-                I completed this project while at Radical X. 
-                There I learned everything I could from those around me.
-                While there, we communicated by Slack and held weekly meetings 
-                to confirm we all knew what we were doing that week.
-                We also used GitHub for our version control and Notion for a project roadmap.
+                This is a portfolio that I plan to update throughout my career as well so if you have any suggestions on the look of it.
+                Please, feel free to let me know. My LinkedIn and GitHub are on the bottom left of the webpage.
+                However, the <Link to="/contact">contact me page</Link> has all the ways to reach out.
               </p>
-
-              <a
-                className="play-button"
-                href="https://www.loom.com/share/274ff7a7f9ec4aa0bbe10529f8c7f84b?sid=8560275c-ebd4-4c04-90f1-e44bece9ccd0"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ▶ Watch demonstration video
-                {/* ▶ Play Now */}
-              </a>
             </div>
           </div>
         </div>
 
-        <div className="dynamo-skills">
+        <div className="portfolioPage-skills">
           <h2>Technologies & Skills</h2>
           <ul className="skills-list">
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Retrieval Augmented Generation (RAG)</li>
-            <li>Google Cloud Platform (GCP)</li>
-            <li>Vertex AI</li>
-            <li>AI Summarization</li>
-            <li>Generative AI Development</li>
-            <li>Few-shot Prompt Engineering</li>
-            <li>API Development</li>
-            <li>Cloud Based Storage</li>
-            <li>Streamlit</li>
+            <li>React</li>
+            <li>Scss</li>
+            <li>Basic Website Design</li>
+            <li>Understanding UX Principles</li>
+            <li>Continuous Development</li>
+            <li>Webhooks</li>
+            <li>GitHub pages</li>
             <li>Git</li>
-            <li>Public Speaking</li>
           </ul>
         </div>
         <div className="projects-link">
@@ -130,4 +111,4 @@ const Dynamo = () => {
   )
 }
 
-export default Dynamo
+export default Portfolio

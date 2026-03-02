@@ -11,8 +11,8 @@ import SyllabusGenerator from './components/Projects/AI/SyllabusGenerator'
 import AudiobookGenerator from './components/Projects/AI/Audiobook'
 // import WorksheetGenerator from './components/Projects/AI/WorksheetGenerator'
 
-// import Portfolio from './components/Projects/FullStack/Portfolio'
-// import SMC from './components/Projects/FullStack/SMC'
+import Portfolio from './components/Projects/FullStack/Portfolio'
+import SMC from './components/Projects/FullStack/SMC'
 
 import Pacman from './components/Projects/GameDevelopment/Pacman'
 import Undergraduate from './components/Projects/GameDevelopment/Undergraduate'
@@ -44,12 +44,9 @@ function App() {
           <Route path="/projects/gameDevelopment/cubey" element={<Cubey />} />
           <Route path="/projects/gameDevelopment/gamedevclass" element={<GameDevClass />} />
           <Route path="/projects/gameDevelopment/d&d" element={<DungeonsAndDragons />} />
-          {/* <Route path="/projects/ai/worksheetGenerator" element={<WorksheetGenerator />} />
 
           <Route path="/projects/fullStack/portfolio" element={<Portfolio />} />
           <Route path="/projects/fullStack/smc" element={<SMC />} />
-
-          <Route path="/projects/gameDevelopment/pacman" element={<Pacman />} /> */}
         </Route>
       </Routes>
     </>

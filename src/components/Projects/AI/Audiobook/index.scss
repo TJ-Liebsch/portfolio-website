@@ -46,6 +46,11 @@
   object-fit: contain;
 }
 
+.mySwiper {
+  --swiper-navigation-color: #2dd4f7;
+  --swiper-pagination-color: #2dd4f7;
+}
+
 // .media-link {
 //   position: relative;
 //   display: block;
@@ -108,6 +113,7 @@
   max-width: 1400px;
   margin: 6rem auto 0;
   padding: 3rem;
+  padding-top: 6px;
   background: rgba(17, 24, 39, 0.7);
   border-radius: 1.25rem;
 }

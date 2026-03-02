@@ -43,7 +43,7 @@ const Pacman = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={[...'Pacman']}
-              idx={6}
+              idx={12}
             />
           </h1>
 
@@ -88,11 +88,11 @@ const Pacman = () => {
             <div className="project-description">
               <h2>About Pacman</h2>
               <p>
-                This Pacman clone was my first ever game I developed from scratch. In 2021, 
-                I decided I wanted to develop video games and this was just my begining. 
-                I looked up a youtube series by <a href="https://youtu.be/tjxKxZsofdk?si=yF5ZhzdRG9zzoAjN">the weekly coder</a> {""}
-                that taught me not only how to make the pacman clone but also taught me nice tricks to use in the industry like 
-                when to use nodes vs arrays and 2D movement. I learned a lot from this small project and it gave me the confidence to try my first ever game jam. 
+                This Pacman clone was the first ever game I developed from scratch. In 2021, 
+                I decided I wanted to develop video games, and this was just my beginning. 
+                I looked up a YouTube series by <a href="https://youtu.be/tjxKxZsofdk?si=yF5ZhzdRG9zzoAjN">the weekly coder</a> {""}
+                that taught me not only how to make the Pacman clone but also taught me nice tricks to use in the industry like 
+                when to use nodes vs arrays and 2D movement. I learned a lot from this small project, and it gave me the confidence to try my first ever game jam. 
                 This is when I created <a href="CubeyCombination">Cubey Combination</a>
               </p>
 

@@ -88,19 +88,19 @@ const AIGame = () => {
             <div className="project-description">
               <h2>About AI Game Development Project</h2>
               <p>
-                This AI Game Development Project was the most recent new game I have developed and it blends my AI experience with my game development experience.
+                This AI Game Development Project was the most recent new game I have developed, and it blends my AI experience with my game development experience.
                 This goal of this game was to bring an immersive, real-time, and limitless D&D experience through AI and the Unity Game Engine.
                 I worked as the AI developer and <a href='https://www.linkedin.com/in/josephine-green-a2420a295/'>Josie Green</a> {""} worked as the game developer. 
               </p>
               <p>  
-                We had version control through Unity Cloud and we used Microsoft Azure for our backlog.
-                To deviver the AI tools, I developed a way to call the AI models' APIs using unity scripts.
+                We had version control through Unity Cloud, and we used Microsoft Azure for our backlog.
+                To deliver the AI tools, I developed a way to call the AI models' APIs using unity scripts.
                 While in this project, I had to use multiple different models: DALLE-3 for image generation and Botpress for chatbot.
-                I chose Botpress because of their simple finetuning as I knew we would have to specialize the AI to our use case and make changes quick for our professor.
+                I chose Botpress because of their simple fine-tuning as I knew we would have to make changes quickly for our professor.
                 Our game only took around 6 seconds without image generation and around 30 seconds with image generation. 
-                However, in the future, we can switch to a CAG pipeline for image generation removing the 24 second downtime in most scenerios.
-                The game only cost around a dollar per short playthough. 
-                However, we can make that even cheaper, around 4 cents per short playthough, but we have not developed the game further.
+                However, in the future, we can switch to a CAG pipeline for image generation removing the 24 second downtime in most scenarios.
+                The game only costs around a dollar per short playthrough. 
+                However, we can make that even cheaper, around 4 cents per short playthrough, but we have not developed the game further.
               </p>
               <p>
                 Live Demos are available upon request

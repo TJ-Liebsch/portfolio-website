@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
-import dynamo from '../../../../assets/images/projects/ai/dynamo.png'
-import dynamoVideo from '../../../../assets/images/projects/ai/Dynamo Video.gif'
+import home from '../../../../assets/images/projects/full/smcWeb.png'
+import api from '../../../../assets/images/projects/full/smcApi.png'
+import data from '../../../../assets/images/projects/full/smcData.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../../../AnimatedLetters'
 import './index.scss'
@@ -12,11 +13,12 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 
 const media = [
-  { type: "image", src: dynamo, alt: "Dynamo" },
-  { type: "video", src: dynamoVideo, alt: "Dynamo video link", href: "https://www.loom.com/share/274ff7a7f9ec4aa0bbe10529f8c7f84b?sid=8560275c-ebd4-4c04-90f1-e44bece9ccd0", label: "Watch Demo"}
+  { type: "image", src: home, alt: "Event Planner Homepage" },
+  { type: "image", src: api, alt: "Event Planner API" },
+  { type: "image", src: data, alt: "Event Planner Database" }
 ];
 
-const Dynamo = () => {
+const SMC = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
@@ -29,12 +31,12 @@ const Dynamo = () => {
 
   return (
     <>
-      <div className="container dynamo">
-        <div className="dynamo-text">
+      <div className="container smc">
+        <div className="smc-text">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[...'Mission Dynamo']}
+              strArray={[...'SMC Event Planner']}
               idx={15}
             />
           </h1>
@@ -72,50 +74,36 @@ const Dynamo = () => {
             </div>
 
             <div className="project-description">
-              <h2>About Mission Dynamo</h2>
+              <h2>About SMC Event Planner</h2>
               <p>
-                Mission Dynamo is an AI Development project tasked assisting students by 
-                creating easy to study flashcards from source material. To accomplish this, I used a RAG pipeline 
-                that would summarize the users' YouTube video into easy to understand flashcards from important information.
-                This gave students the opportunity to study the YouTube video's key concepts so the students wouldn't miss the important information.
+                In this project, myself and 3 other developers engineered a full-stack event reservation platform using React, SQL stored procedures, and PayPal API. 
+                For this project, I primarily worked as the backend developer and was tasked with setting up the Microsoft Azure Cloud Storage Service and the API calls.
+                The team and I worked closely with the client to deliver customer bookings and simplified event coordination for a local entertainment venue.
               </p>
               <p>
-                I completed this project while at Radical X. 
-                There I learned everything I could from those around me.
-                While there, we communicated by Slack and held weekly meetings 
-                to confirm we all knew what we were doing that week.
-                We also used GitHub for our version control and Notion for a project roadmap.
+                We coordinated with team meetings at the end of every week to see each other's progress and problem solve any setbacks.
+                This was a project that taught me a lot about what goes into developing a website.
+                However, it also taught me about how to develop software for a client.
+                That was the best skill I could have learned from this role because it'll be useful wherever I go.
               </p>
-
-              <a
-                className="play-button"
-                href="https://www.loom.com/share/274ff7a7f9ec4aa0bbe10529f8c7f84b?sid=8560275c-ebd4-4c04-90f1-e44bece9ccd0"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ▶ Watch demonstration video
-                {/* ▶ Play Now */}
-              </a>
             </div>
           </div>
         </div>
 
-        <div className="dynamo-skills">
+        <div className="smc-skills">
           <h2>Technologies & Skills</h2>
           <ul className="skills-list">
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Retrieval Augmented Generation (RAG)</li>
-            <li>Google Cloud Platform (GCP)</li>
-            <li>Vertex AI</li>
-            <li>AI Summarization</li>
-            <li>Generative AI Development</li>
-            <li>Few-shot Prompt Engineering</li>
-            <li>API Development</li>
-            <li>Cloud Based Storage</li>
-            <li>Streamlit</li>
+            <li>C#</li>
+            <li>ASP.Net</li>
+            <li>React</li>
+            <li>Scss</li>
+            <li>SQL</li>
+            <li>Basic Website Design</li>
+            <li>API Design</li>
+            <li>Database Design</li>
+            <li>Azure Cloud Storage Services</li>
+            <li>Gathering Client Requirements</li>
             <li>Git</li>
-            <li>Public Speaking</li>
           </ul>
         </div>
         <div className="projects-link">
@@ -130,4 +118,4 @@ const Dynamo = () => {
   )
 }
 
-export default Dynamo
+export default SMC

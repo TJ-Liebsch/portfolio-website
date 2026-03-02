@@ -42,7 +42,7 @@ const DungeonsAndDragons = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[...'Dungeons And Dragons']}
+              strArray={[...'Dungeons and Dragons']}
               idx={16}
             />
           </h1>
@@ -81,19 +81,20 @@ const DungeonsAndDragons = () => {
             
 
             <div className="project-description">
-              <h2>About Dungeons And Dragons</h2>
+              <h2>About Dungeons and Dragons</h2>
               <p>
-                Playing Dungeons And Dragons has been a hobby of mine since 2021. It is a passion of mine to build the worlds that I imagine, especially with my friends. 
+                Playing Dungeons and Dragons has been a hobby of mine since 2021. It is a passion of mine to build the worlds that I imagine, especially with my friends. 
                 However, there's a lot more to it than just playing a game. 
-                There is the descriptive naration, out of the box thinking, team collaberation, and character creation.
-                However, if you are running the show, you are responible for indirectly leading players, design engaging gameplay elements, keep detailed records of each interaction, thinking on your feet, and scheduling the a time to meet, despite everyone's conflicting schedules.
+                There is descriptive narration, out of the box thinking, team collaboration, and character creation.
+                However, if you are running the show, you are responsible for indirectly leading players, design engaging gameplay elements, 
+                keep detailed records of each interaction, thinking on your feet, and scheduling a time to meet, despite everyone's conflicting schedules.
               </p>
               <p>
                 It may not be my most formal experience, but it has taught me how to build engaging worlds for a wide range of players and keep the game engaging every week with something new.
                 I have made around 5 unique worlds and played in 3.
-                With being the leader of the game, you also have to tie the NPCs you build into their existing characters. 
-                Meaning I have had to creativly combine 2 seperate stories around 12 different times.
-                The images you see are the world map I made with the free version of Inkarnate and a battle map I took from pintrest (The credits are in the bottom right of the image. Please go check out their stuff.)
+                Being the leader of the game, you also must tie the NPCs you build into their existing characters. 
+                Meaning I have had to creatively combine 2 separate stories around 12 different times.
+                The images you see are the world map I made with the free version of Inkarnate and a battle map I took from Pinterest (The credits are in the bottom right of the image. Please go check out their stuff.)
               </p>
 
               {/* <a
@@ -114,12 +115,12 @@ const DungeonsAndDragons = () => {
             <li>Descriptive and Engaging Storytelling</li>
             <li>Character Creation</li>
             <li>Creative Thinking</li>
-            <li>Team Collaberation</li>
+            <li>Team Collaboration</li>
             <li>Indirectly Helping Players</li>
             <li>Designing Engaging Gameplay Mechanics</li>
-            <li>Accurate Long Term Record Keeping</li>
-            <li>Story Intergration</li>
-            <li>Story Flexablity</li>
+            <li>Accurate Long-Term Record Keeping</li>
+            <li>Story Integration</li>
+            <li>Story Flexibility</li>
             <li>Time Management</li>
             <li>People Management</li>
           </ul>

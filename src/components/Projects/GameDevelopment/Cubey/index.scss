@@ -14,7 +14,7 @@
 .cubey-text h1 {
   font-size: 53px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-top: -10px;
 }
 
@@ -112,6 +112,7 @@
   max-width: 1400px;
   margin: 6rem auto 0;
   padding: 3rem;
+  padding-top: 6px;
   background: rgba(17, 24, 39, 0.7);
   border-radius: 1.25rem;
 }

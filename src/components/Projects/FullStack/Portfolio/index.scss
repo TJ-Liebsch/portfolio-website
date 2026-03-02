@@ -1,4 +1,4 @@
-.quizify {
+.portfolioPage {
   width: 100%;
   min-height: 100vh;
   padding: 4rem 3rem;
@@ -6,15 +6,14 @@
   color: #e5e7eb;
 }
 
-.quizify-text {
+.portfolioPage-text {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.quizify-text h1 {
+.portfolioPage-text h1 {
   font-size: 53px;
   font-weight: 700;
-  margin-bottom: 20px;
   margin-top: -10px;
 }
 
@@ -73,10 +72,6 @@
 //   }
 // }
 
-.project-description {
-  margin-top: -40px;
-}
-
 .project-description h2 {
   font-size: 32px;
   margin-bottom: 1.5rem;
@@ -108,7 +103,7 @@
   box-shadow: 0 12px 25px rgba(124, 58, 237, 0.45);
 }
 
-.quizify-skills {
+.portfolioPage-skills {
   max-width: 1400px;
   margin: 6rem auto 0;
   padding: 3rem;
@@ -117,7 +112,7 @@
   border-radius: 1.25rem;
 }
 
-.quizify-skills h2 {
+.portfolioPage-skills h2 {
   font-size: 24px;
   margin-bottom: 2rem;
 }

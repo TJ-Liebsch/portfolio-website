@@ -74,10 +74,10 @@ const AudiobookGenerator = () => {
             <div className="project-description">
               <h2>About Audiobook Generator</h2>
               <p>
-                Audiobook Generator is an AI Development product tasked with generating an audiobooks for authors. 
-                It is equipped with voice cloning, chapter segmentation, and the capablity to record different voices for seperate characters. 
+                Audiobook Generator is an AI Development product tasked with generating audiobooks for authors. 
+                It is equipped with voice cloning, chapter segmentation, and the capability to record different voices for separate characters. 
                 I took on this project after I graduated as the president of PS Publishing knew of my Radical X experience and wanted to develop audiobooks.
-                In this project, I worked as a solo developer and used open source AI models to develop this product as cost effectivly as I could.
+                In this project, I worked as a solo developer and used open-source AI models to develop this product as cost effectively as I could.
                 I gathered her requirements for the product and have been working with her to create an AI personalized to her company.
                 In other words, the AI use cases had to range from children's books to horror. 
               </p>
@@ -85,20 +85,29 @@ const AudiobookGenerator = () => {
                 I completed this project while PS Publishing. 
                 There I created a Jira backlog and an kept the president updated on my progress with the project.
                 I am still adding little features here and there like an automated word checker 
-                so the author can confirm that hard to pronounce words were pronounced corectly without having to search the whole recording.
-                I'll update my LinkedIn when those changes are added so stay tooned.
+                so the author can confirm that hard to pronounce words were pronounced correctly without having to search the whole recording.
+                I'll update my LinkedIn when those changes are added so stay tuned.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="syllabus-skills">
+        <div className="audiobook-skills">
           <h2>Technologies & Skills</h2>
           <ul className="skills-list">
             <li>Open Source Technologies</li>
             <li>Python</li>
+            <li>PyTorch</li>
+            <li>PyTorch Audio</li>
             <li>Machine Learning</li>
             <li>Generative AI Development</li>
+            <li>AI Text to Speech Generation</li>
+            <li>Voice Cloning Development</li>
+            <li>Natural Language Processing</li>
+            <li>Fine Tuning</li>
+            <li>Audacity</li>
+            <li>Audio Processing</li>
+            <li>Mel Spectrograph Data Modifications</li>
             <li>Agile Methodologies</li>
             <li>Git</li>
           </ul>

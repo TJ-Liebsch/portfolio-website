@@ -79,17 +79,17 @@ const Quizify = () => {
               <h2>About Mission Quizify</h2>
               <p>
                 Mission Quizify is an AI Development project tasked assisting teachers by 
-                creating quizes from sorce material. To acomplish this, I used a RAG pipeline 
-                that would gather information for potentiontal quiz questions from the pdf you inputed.
+                creating quizzes from source material. To accomplish this, I used a RAG pipeline 
+                that would gather information for potential quiz questions from the pdf you input.
                 Then a Google Cloud Platform Vertex AI model would generate quiz questions from that pdf.
-                Afterwards, I displayed the quiz questions to the UI using streamlit and an API.
+                Afterwards, I displayed the quiz questions to the UI using Streamlit and an API.
               </p>
               <p>
                 I completed this project while at Radical X. 
                 There I learned everything I could from those around me.
                 While there, we communicated by Slack and held weekly meetings 
                 to confirm we all knew what we were doing that week.
-                We also used Github for our version control and Notion for a project roadmap.
+                We also used GitHub for our version control and Notion for a project roadmap.
               </p>
 
               <a

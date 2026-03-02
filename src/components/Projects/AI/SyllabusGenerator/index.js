@@ -79,15 +79,16 @@ const SyllabusGenerator = () => {
                 I took on this project as a request from my supervisor and was promoted to project manager for the role.
                 In this project, I was the project manager and lead a team of 4 developers and I hosted weekly meetings with them to confirm progress and explain next steps.
                 I also participated in weekly meetings with my supervisor to explain our progress and any difficulties we had.
-                Our syllabus generator was equipped with API connections and a CI/CD pipeline developed by <a href="https://www.linkedin.com/in/kriti-ajwani-a462b218a/">Kriti Ajwani</a>. At the end of this project, I opted in to present our work to the whole company.
-                The presentation was a success and the syllabus generator final build was pushed to the main repository.
+                Our syllabus generator was equipped with API connections and a CI/CD pipeline developed by <a href="https://www.linkedin.com/in/kriti-ajwani-a462b218a/">Kriti Ajwani</a>. 
+                At the end of this project, I opted to present our work to the whole company.
+                The presentation was a success, and the syllabus generator final build was pushed to the main repository.
               </p>
               <p>
                 I completed this project while at Radical X. 
                 There I learned everything I could from those around me.
                 While there, we communicated by Slack and I hosted weekly meetings 
                 to confirm we all knew what we were doing that week.
-                We also used Github for our version control and Notion for a project roadmap.
+                We also used GitHub for our version control and Notion for a project roadmap.
               </p>
             </div>
           </div>

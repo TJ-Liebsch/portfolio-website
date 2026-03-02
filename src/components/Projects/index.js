@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Link } from 'react-router-dom'
 import smcWeb from '../../assets/images/projects/full/smcWeb.png'
 // import smcApi from '../../assets/images/projects/smcApi.png'
@@ -10,7 +10,7 @@ import portfolio from '../../assets/images/projects/full/portfolio.png'
 import quizify from '../../assets/images/projects/ai/quizify.png'
 import dynamo from '../../assets/images/projects/ai/dynamo.png'
 // import worksheet_gen from '../../assets/images/projects/ai/worksheet.png'
-import syllabus_gen from '../../assets/images/projects/ai/syllabus.png'
+import syllabus_gen from '../../assets/images/projects/ai/Syllabus Generator Front End.png'
 import audiobook_gen from '../../assets/images/projects/ai/justSpectograph.png'
 
 
@@ -28,6 +28,8 @@ import './index.scss'
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 
 
 const aiImages = [
@@ -35,16 +37,16 @@ const aiImages = [
     src: quizify,
     alt: 'Quizify',
     title: 'Quizify',
-    text: 'Full-stack quiz platform with user auth and analytics.',
-    skills: 'React, Node.js, MongoDB',
+    text: 'Quick Quiz Generator for Teachers and Students',
+    skills: 'Python, GCP, Langchain',
     link: 'AI/Quizify'
   },
   {
     src: dynamo,
     alt: 'Dynamo',
     title: 'Dynamo',
-    text: 'Workflow automation dashboard.',
-    skills: 'React, Express, PostgreSQL',
+    text: 'AI Flashcard Generator to help students study',
+    skills: 'Python, GCP, Langchain',
     link: 'AI/Dynamo'
   },
   // {
@@ -59,23 +61,23 @@ const aiImages = [
     src: syllabus_gen,
     alt: 'Syllabus Generator',
     title: 'Syllabus Generator',
-    text: 'Automated syllabus creation using AI.',
-    skills: 'Python, LLMs',
+    text: 'An AI syllabus creation tool for new professors to use',
+    skills: 'Python, GCP, Langchain',
     link: 'AI/SyllabusGenerator'
   },
   {
     src: audiobook_gen,
     alt: 'Audiobook Generator',
     title: 'Audiobook Generator',
-    text: 'Audiobook Generator using Open Source AI.',
-    skills: 'Python, LLMs, Open Source Technologies',
+    text: 'Audiobook Generator using Open-Source AI models',
+    skills: 'Python, LLMs, Open-Source Technologies',
     link: 'AI/Audiobook'
   },
   {
     src: aiGame,
     alt: 'AI Game Development Project',
     title: 'AI Game Development Project',
-    text: "A truly limitless game thanks to AI's flexibility",
+    text: "A truly limitless game that utilizes AI's flexibility",
     skills: 'Unity, C#, AI Development',
     link: 'GameDevelopment/AIGame'
   },
@@ -86,25 +88,25 @@ const gameImages = [
     src: pacman,
     alt: 'Pacman Project',
     title: 'Pacman',
-    text: 'A pacman clone that I made at the end of highschool',
+    text: 'A Pacman clone that I made at the end of high school',
     skills: 'Unity, C#, Game Design',
     link: 'GameDevelopment/Pacman'
-  },
-  {
-    src: undergrad,
-    alt: 'Applied Undergraduate Research Project',
-    title: 'Applied Undergraduate Research Project',
-    text: 'A game that teachs the beginner concepts of C++',
-    skills: 'Unity, C#, 3D Design',
-    link: 'GameDevelopment/Undergraduate'
   },
   {
     src: aiGame,
     alt: 'AI Game Development Project',
     title: 'AI Game Development Project',
-    text: "A truly limitless game thanks to AI's flexibility",
+    text: "A truly limitless game that utilizes AI's flexibility",
     skills: 'Unity, C#, AI Development',
     link: 'GameDevelopment/AIGame'
+  },
+  {
+    src: gameDevClass,
+    alt: 'All Game Dev Class Games',
+    title: 'All Game Dev Class Games',
+    text: "The culmination of my projects in my game dev class",
+    skills: 'Unity, C#, Menu Systems',
+    link: 'GameDevelopment/GameDevClass'
   },
   {
     src: dnd,
@@ -115,20 +117,20 @@ const gameImages = [
     link: 'GameDevelopment/D&D'
   },
   {
-    src: gameDevClass,
-    alt: 'All Game Dev Class Games',
-    title: 'All Game Dev Class Games',
-    text: "The culmination of my projects in my game development class",
-    skills: 'Unity, C#, Menu Systems',
-    link: 'GameDevelopment/GameDevClass'
-  },
-  {
     src: cubey,
     alt: 'Cubey Combination',
     title: 'Cubey Combination',
     text: "The result of my first ever Game Jam",
     skills: 'Unity, C#, 2D Movement',
     link: 'GameDevelopment/Cubey'
+  },
+  {
+    src: undergrad,
+    alt: 'Applied Undergraduate Research Project',
+    title: 'Applied Undergraduate Research Project',
+    text: 'A game made to teach the beginner concepts of C++',
+    skills: 'Unity, C#, 3D Design',
+    link: 'GameDevelopment/Undergraduate'
   },
 ]
 
@@ -137,17 +139,17 @@ const fullStackImages = [
     src: smcWeb,
     alt: 'SMC Project',
     title: 'Event Booking Website',
-    text: 'Developed API calls and database alongside 3 frontend developers',
+    text: 'Developed API calls and database with 3 frontend developers',
     skills: 'React, Node.js, MongoDB',
-    link: '/projects/smc'
+    link: 'FullStack/SMC'
   },
   {
     src: portfolio,
     alt: 'Portfolio Home Page',
     title: 'This Portfolio',
-    text: 'A React.js webpage that was published with github pages',
+    text: 'A React.js webpage that was published with GitHub pages',
     skills: 'React, Express, PostgreSQL',
-    link: '/projects/portfolio'
+    link: 'FullStack/Portfolio'
   }
 ]
 
@@ -204,10 +206,14 @@ const Projects = () => {
     return(
       <div className='project-cards'>
         <Swiper
-          modules={[Autoplay, Navigation]}
+          modules={[Autoplay, Pagination, Navigation]}
           navigation={hasMultipleSlides}
           loop={hasMultipleSlides} 
+          slidesPerView={3}
           spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
           autoplay={
             hasMultipleSlides
               ? { 

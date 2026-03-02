@@ -31,18 +31,18 @@ const Sidebar = () => (
                 <a 
                     target='_blank'
                     rel='noreferrer'
-                    href='https://www.linkedin.com/in/tj-liebsch/'
+                    href='https://github.com/TJ-Liebsch'
                 >
-                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                 </a>
             </li>
             <li>
                 <a 
                     target='_blank'
                     rel='noreferrer'
-                    href='https://github.com/TJ-Liebsch'
+                    href='https://www.linkedin.com/in/tj-liebsch/'
                 >
-                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
                 </a>
             </li>
         </ul>

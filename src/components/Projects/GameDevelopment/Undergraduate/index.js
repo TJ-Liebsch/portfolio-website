@@ -98,16 +98,16 @@ const Undergraduate = () => {
             <div className="project-description">
               <h2>About Undergraduate Research Project</h2>
               <p>
-                In SE 342 at Saint Cloud State University. I took the class Applied Undergraduate Research. 
-                In this class, myself and 3 other developers decide to research the imact of interactive game-based learning for computer science students.
-                We wanted to see if gameifying the course material would make it easier to learn. 
+                In SE 342, at Saint Cloud State University, I took Applied Undergraduate Research. 
+                In this class, myself and 3 other developers decided to research the impact of interactive game-based learning for computer science students.
+                We wanted to see if gamifying the course material would make it easier to learn. 
                 To research this, we developed before and after tests using google forms. 
                 Afterwords we got participants with a diverse level of coding experience.
                 The material they were tested on, before and after the game, was computer science 1 topics.
               </p>
               <p>
-                The game was developed with Unity Game Engine and consisted of 3 different topics: variables, if statments, and loops.
-                There was also a main menu page to navigate between them.f
+                The game was developed with Unity Game Engine and consisted of 3 different topics: variables, if statements, and loops.
+                There was also a main menu page to navigate between them.
                 After we were done with this project, we had developed a research paper, test results, and a working educational game.
                 For the research topic, can interactive game-based learning for computer science students help, we found that there was an improvement in the test scores after playing the game.
               </p>

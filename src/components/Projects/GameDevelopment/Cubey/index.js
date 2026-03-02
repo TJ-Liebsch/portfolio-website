@@ -90,18 +90,18 @@ const Cubey = () => {
             <div className="project-description">
               <h2>About Cubey Combination</h2>
               <p>
-                Cubey Combination was the result of a week long Game Jam and it was my second ever game that I developed.
+                Cubey Combination was the result of a Game Jam and it was my second game I developed.
                 When you participate in a Game Jam, you get given a prompt to build your game around. Mine was combination.
-                I began brainstorming ideas and pretty quickly came up with a platformer that requires you to combine with pieces to your advance to take everyone to victory.
+                I began brainstorming ideas and quickly came up with a platformer that requires you to combine pieces to your advance to take everyone to victory.
                 After I developed the core mechanics, I began working on level design.
-                I proceeded to then design 4 levels, with the final level being triple to length of the others.
-                Each level would have it's own unique mechanic that would carry over each level: doors, lazers, dashes, and a chase scene.
-                The first level was very easy and only took me one day. However, I proceeded to get stuck on implementing the lazer feature.
+                I proceeded to design 4 levels, with the final level being 3 times as long as the others.
+                Each level would have its own unique mechanic that would carry over each level: doors, lasers, dashes, and a chase scene.
+                Developing the first level was very easy and only took me one day. However, I got stuck on implementing the laser feature.
                 This led the first version of my game to only have a menu, one level, and end credits.
               </p>
               <p>
                 I took this as a learning experience, as that's all you can ever do. 
-                Now I have learned how to overcome those roadblocks and it was thanks to my software engineering experience at SCSU.
+                Now I have learned how to overcome those roadblocks, and it was thanks to my software engineering experience at SCSU.
                 After graduating and wanting to pursue game development, I decided to revisit developing the game.
                 I am currently still working on it; however, I took a break to develop this portfolio.
               </p>
@@ -133,7 +133,7 @@ const Cubey = () => {
             <li>Input Handling</li>
             <li>Collision Detection</li>
             <li>2D Sprite Animation</li>
-            <li>Tileset Designs</li>
+            <li>Tile Set Designs</li>
             <li>Camera Control</li>
             <li>Persistence</li>
           </ul>

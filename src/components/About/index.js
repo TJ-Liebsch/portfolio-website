@@ -29,20 +29,23 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a new Software Engineering graduate from St. Cloud State University, 
-            and I am looking for a job that can fit my skills in 
+            I'm a new Software Engineering graduate from St. Cloud State University. 
+            I am looking for a job that can fit my skills in 
             AI, Full Stack Development, or Game Development.
           </p>
           <p align="LEFT">
-            I have always been interested in all of those fields as I used each of those in my first ever personal project, pacman.
-            That project and a few other reasons are the reason why I want to work in the Software Engineering field.
-            Which is why I'd like to work for you.
+            I have always been interested in those fields as I used them in my first ever personal project, a Pacman Clone.
+            That project, and many others, have taught me software development skills over the past 6 years.
+            However, I'd like to use my skills to help your company and if that interests you, feel free to reach out.
           </p>
           <p>
-            While at St. Cloud State University, 
-            I have done a series of Professional and Personal Projects 
-            that have led me to being proficent with quite a few skills. 
-            A few of which you can see on that cube to the right.
+            After college, I went to work for PS Publishing as an AI Engineer.
+            While there I developed an AI Audiobook Generator using an open-source AI model.
+            As the project taught me a lot about AI development, I wanted to test my skills.
+            I then sought out my AWS Certified AI Practitioner Certificate and achieved that goal on January 9th, 2026. 
+          </p>
+          <p>
+            Now I am trying to take my degree, certificate, and experience to develop software to further advance the industry.
           </p>
         </div>
 
