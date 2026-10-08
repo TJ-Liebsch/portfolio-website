@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
 // import { Unity, useUnityContext } from "react-unity-webgl";
+import cubeyVid from '../../../../assets/images/projects/game/Cubey Combination Demo.mp4'
 import cubey0 from '../../../../assets/images/projects/game/Cubey0.jpeg'
 import cubey1 from '../../../../assets/images/projects/game/Cubey1.png'
 import cubey2 from '../../../../assets/images/projects/game/Cubey2.png'
@@ -14,6 +15,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 
 const media = [
+  { type: "video", src: cubeyVid, alt: "Demo Video" },
   { type: "image", src: cubey0, alt: "First Draft" },
   { type: "image", src: cubey1, alt: "Second Draft"},
   { type: "image", src: cubey2, alt: "Third Draft"}
@@ -68,18 +70,28 @@ const Cubey = () => {
               >
                 {media.map((item, i) => (
                   <SwiperSlide key={i}>
-                    {item.type === "link" ? (
+                    {item.type === "video" ? (
+                      <video
+                        src={item.src}
+                        controls
+                        playsInline
+                        className="media-video"
+                      />
+                    ) : item.type === "link" ? (
                       <a
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="media-link"
                       >
-                        <img src={item.src} alt="" />
+                        <img src={item.src} alt={item.alt} />
                         <div className="overlay">▶ Watch Video</div>
                       </a>
                     ) : (
-                      <img src={item.src} alt="" />
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                      />
                     )}
                   </SwiperSlide>
                 ))}
