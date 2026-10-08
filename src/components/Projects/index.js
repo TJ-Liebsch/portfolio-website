@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import smcWeb from '../../assets/images/projects/full/smcWeb.png'
 // import smcApi from '../../assets/images/projects/smcApi.png'
 // import smcData from '../../assets/images/projects/smcData.png'
@@ -40,7 +40,7 @@ const aiImages = [
     title: 'Quizify',
     text: 'Quick Quiz Generator for Teachers and Students',
     skills: 'Python, GCP, Langchain',
-    link: 'AI/Quizify'
+    link: '/projects/ai/Quizify'
   },
   {
     src: dynamo,
@@ -48,7 +48,7 @@ const aiImages = [
     title: 'Dynamo',
     text: 'AI Flashcard Generator to help students study',
     skills: 'Python, GCP, Langchain',
-    link: 'AI/Dynamo'
+    link: '/projects/ai/Dynamo'
   },
   // {
   //   src: worksheet_gen,
@@ -64,7 +64,7 @@ const aiImages = [
     title: 'Syllabus Generator',
     text: 'An AI syllabus creation tool for new professors to use',
     skills: 'Python, GCP, Langchain',
-    link: 'AI/SyllabusGenerator'
+    link: '/projects/ai/SyllabusGenerator'
   },
   {
     src: audiobook_gen,
@@ -72,7 +72,7 @@ const aiImages = [
     title: 'Audiobook Generator',
     text: 'Audiobook Generator using Open-Source AI models',
     skills: 'Python, LLMs, Open-Source Technologies',
-    link: 'AI/Audiobook'
+    link: '/projects/ai/Audiobook'
   },
   {
     src: aiGame,
@@ -80,7 +80,7 @@ const aiImages = [
     title: 'AI Game Development Project',
     text: "A truly limitless game that utilizes AI's flexibility",
     skills: 'Unity, C#, AI Development',
-    link: 'GameDevelopment/AIGame'
+    link: '/projects/gameDevelopment/AIGame'
   },
 ]
 
@@ -91,7 +91,7 @@ const gameImages = [
     title: 'Savior of the Statue',
     text: "Game Jam from when I worked with a team",
     skills: 'Unity, Teamwork, Click to Move',
-    link: 'GameDevelopment/Statue'
+    link: '/projects/gameDevelopment/Statue'
   },
   {
     src: cubey,
@@ -99,7 +99,7 @@ const gameImages = [
     title: 'Cubey Combination',
     text: "The result of my first ever Game Jam",
     skills: 'Unity, C#, 2D Movement',
-    link: 'GameDevelopment/Cubey'
+    link: '/projects/gameDevelopment/Cubey'
   },
   {
     src: gameDevClass,
@@ -107,7 +107,7 @@ const gameImages = [
     title: 'All Game Dev Class Games',
     text: "The culmination of my projects in my game dev class",
     skills: 'Unity, C#, Menu Systems',
-    link: 'GameDevelopment/GameDevClass'
+    link: '/projects/gameDevelopment/GameDevClass'
   },
   {
     src: pacman,
@@ -115,7 +115,7 @@ const gameImages = [
     title: 'Pacman',
     text: 'A Pacman clone that I made at the end of high school',
     skills: 'Unity, C#, Game Design',
-    link: 'GameDevelopment/Pacman'
+    link: '/projects/gameDevelopment/Pacman'
   },
   {
     src: dnd,
@@ -123,7 +123,7 @@ const gameImages = [
     title: 'Dungeons and Dragons',
     text: "Built detailed worlds through creative storytelling",
     skills: 'Story Telling, Problem Solving',
-    link: 'GameDevelopment/D&D'
+    link: '/projects/gameDevelopment/D&D'
   },
   {
     src: undergrad,
@@ -131,7 +131,7 @@ const gameImages = [
     title: 'Applied Undergraduate Research Project',
     text: 'A game made to teach the beginner concepts of C++',
     skills: 'Unity, C#, 3D Design',
-    link: 'GameDevelopment/Undergraduate'
+    link: '/projects/gameDevelopment/Undergraduate'
   },
   {
     src: aiGame,
@@ -139,7 +139,7 @@ const gameImages = [
     title: 'AI Game Development Project',
     text: "A truly limitless game that utilizes AI's flexibility",
     skills: 'Unity, C#, AI Development',
-    link: 'GameDevelopment/AIGame'
+    link: '/projects/gameDevelopment/AIGame'
   },
 ]
 
@@ -150,7 +150,7 @@ const fullStackImages = [
     title: 'Event Booking Website',
     text: 'Developed API calls and database with 3 frontend developers',
     skills: 'React, Node.js, MongoDB',
-    link: 'FullStack/SMC'
+    link: '/projects/fullStack/SMC'
   },
   {
     src: portfolio,
@@ -158,13 +158,16 @@ const fullStackImages = [
     title: 'This Portfolio',
     text: 'A React.js webpage that was published with GitHub pages',
     skills: 'React, Express, PostgreSQL',
-    link: 'FullStack/Portfolio'
+    link: '/projects/fullStack/Portfolio'
   }
 ]
 
 const Projects = () => {
   
-  const [activeCategory, setActiveCategory] = useState("ai"); // null = show all
+  const { category } = useParams();
+  const navigate = useNavigate();
+
+  // const [activeCategory, setActiveCategory] = useState("ai"); // null = show all
   const [letterClass, setLetterClass] = useState('text-animate');
   const [selectedImage, setSelectedImage] = useState({ 
     category: null, 
@@ -174,6 +177,8 @@ const Projects = () => {
     skills: '' 
   });
 
+  const activeCategory = category || 'ai';
+
   useEffect(() => {
     const idTimeOut = setTimeout(() => {
       setLetterClass('text-animate-hover');
@@ -182,11 +187,11 @@ const Projects = () => {
     return () => clearTimeout(idTimeOut);
   }, []);
 
-    const handleImageClick = (category, index) => {
+  const handleImageClick = (category, index) => {
     let project
 
     if (category === 'ai') project = aiImages[index]
-    if (category === 'game') project = gameImages[index]
+    if (category === 'gameDevelopment') project = gameImages[index]
     if (category === 'fullStack') project = fullStackImages[index]
 
     setSelectedImage({
@@ -199,7 +204,8 @@ const Projects = () => {
   }
 
   const handleCategoryClick = (category) => {
-    setActiveCategory(category);
+    navigate(`/projects/${category}`);
+    // setActiveCategory(category);
     handleImageClick(category, 0); // still select first project
   };
 
@@ -303,9 +309,9 @@ const Projects = () => {
                 <div className="individual-buttons">
                   <button
                     className={`project-category-header ${
-                      activeCategory === 'game' ? 'active' : ''
+                      activeCategory === 'gameDevelopment' ? 'active' : ''
                     }`}
-                    onClick={() => handleCategoryClick('game')}
+                    onClick={() => handleCategoryClick('gameDevelopment')}
                   >
                     <h2>Game Development</h2>
                   </button>
@@ -328,8 +334,8 @@ const Projects = () => {
                 renderCards(aiImages, 'ai')}
 
               {/* Game Development */}
-              {(activeCategory === null || activeCategory === 'game') &&
-                renderCards(gameImages, 'game')}
+              {(activeCategory === null || activeCategory === 'gameDevelopment') &&
+                renderCards(gameImages, 'gameDevelopment')}
 
               {/* Full Stack Development */}
               {(activeCategory === null || activeCategory === 'fullStack') &&

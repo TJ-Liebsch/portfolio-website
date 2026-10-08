@@ -171,7 +171,7 @@ const Cubey = () => {
           </ul>
         </div>
         <div className="projects-link">
-          <Link to="/projects" className="back-link">
+          <Link to="/projects/gameDevelopment" className="back-link">
             ← Back to Projects
           </Link>
         </div>

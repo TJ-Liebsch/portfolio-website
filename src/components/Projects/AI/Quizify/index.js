@@ -123,7 +123,7 @@ const Quizify = () => {
           </ul>
         </div>
         <div className="projects-link">
-          <Link to="/projects" className="back-link">
+          <Link to="/projects/ai" className="back-link">
             ← Back to Projects
           </Link>
         </div>

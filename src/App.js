@@ -39,7 +39,7 @@ function App() {
           <Route path="/projects/ai/syllabusGenerator" element={<SyllabusGenerator />} />
           <Route path="/projects/ai/audiobook" element={<AudiobookGenerator />} />
           
-          <Route path="/projects/gamedevelopment/pacman" element={<Pacman />} />
+          <Route path="/projects/gameDevelopment/pacman" element={<Pacman />} />
           <Route path="/projects/gameDevelopment/undergraduate" element={<Undergraduate />} />
           <Route path="/projects/gameDevelopment/aigame" element={<AIGame />} />
           <Route path="/projects/gameDevelopment/cubey" element={<Cubey />} />
