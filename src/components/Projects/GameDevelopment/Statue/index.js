@@ -3,10 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
 // import { Unity, useUnityContext } from "react-unity-webgl";
-import cubeyVid from '../../../../assets/images/projects/game/Cubey Combination Demo.mp4'
-import cubey0 from '../../../../assets/images/projects/game/Cubey0.jpeg'
-import cubey1 from '../../../../assets/images/projects/game/Cubey1.png'
-import cubey2 from '../../../../assets/images/projects/game/Cubey2.png'
+import statueDemo from '../../../../assets/images/projects/game/Savior of the Statue Demo.mp4'
+import statueProgress from '../../../../assets/images/projects/game/Savior of the Statue Daily Progress.mp4'
+import statueMenu from '../../../../assets/images/projects/game/Statue Menu.png'
+import statueMap from '../../../../assets/images/projects/game/Statue Map.png'
+import statueTutorial from '../../../../assets/images/projects/game/Statue Tutorial.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../../../AnimatedLetters'
 import './index.scss'
@@ -15,13 +16,14 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 
 const media = [
-  { type: "video", src: cubeyVid, alt: "Demo Video" },
-  { type: "image", src: cubey0, alt: "First Draft" },
-  { type: "image", src: cubey1, alt: "Second Draft"},
-  { type: "image", src: cubey2, alt: "Third Draft"}
+  { type: "video", src: statueDemo, alt: "Demo Video" },
+  { type: "video", src: statueProgress, alt: "Progress Video" },
+  { type: "image", src: statueMenu, alt: "Main Menu"},
+  { type: "image", src: statueMap, alt: "Player Map"},
+  { type: "image", src: statueTutorial, alt: "Player Tutorial"},
 ];
 
-const Cubey = () => {
+const Statue = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const swiperRef = useRef(null)
 
@@ -42,13 +44,13 @@ const Cubey = () => {
 
   return (
     <>
-      <div className="container cubey">
-        <div className="cubey-text">
+      <div className="container statue">
+        <div className="statue-text">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[...'Cubey Combination']}
-              idx={17}
+              strArray={[...'Savior Of The Statue']}
+              idx={16}
             />
           </h1>
 
@@ -120,27 +122,29 @@ const Cubey = () => {
             
 
             <div className="project-description">
-              <h2>About Cubey Combination</h2>
+              <h2>About Savior Of The Statue</h2>
               <p>
-                Cubey Combination was the result of a Game Jam and it was my second game I developed.
-                When you participate in a Game Jam, you get given a prompt to build your game around. Mine was combination.
-                I began brainstorming ideas and quickly came up with a platformer that requires you to combine pieces to your advance to take everyone to victory.
-                After I developed the core mechanics, I began working on level design.
-                I proceeded to design 4 levels, with the final level being 3 times as long as the others.
-                Each level would have its own unique mechanic that would carry over each level: doors, lasers, dashes, and a chase scene.
-                Developing the first level was very easy and only took me one day. However, I got stuck on implementing the laser feature.
-                This led the first version of my game to only have a menu, one level, and end credits.
+                Savior of the Statue was the result of my second ever Game Jam and for this one I wanted to work with a team.
+                A few days before the competition I went to the Game Jam's posted discord server and saw a 2D artist looking for a programmer.
+                After a few messages, we decided to be teammates. 
+                On the first day, we brainstormed ideas, and came up with a tower defense game where you protect a statue for multiple waves.
+                At first, I made a NavMesh system for the player and enemy pathfinding. 
+                However, after a bit of discussion about my teammate's vision for the game, we went with a more grid like pathfinding solution.
+                We then worked on developing the core mechanics: click to move navigation, collecting resources, and damaging enemies. 
+                At the start of the 4th day of this 7 day long Game Jam, I received a message from my teammate saying, "Due to work things, he has to unfortunately step away from the project." 
               </p>
               <p>
-                I took this as a learning experience, as that's all you can ever do. 
-                Now I have learned how to overcome those roadblocks, and it was thanks to my software engineering experience at SCSU.
-                After graduating and wanting to pursue game development, I decided to revisit developing the game.
-                And now the game has 3 new levels, new animations, and MUSIC! 
+                I was on my own now, and I had only received temporary drawings from him before he left. 
+                So I asked his permission to use those and he said he was ok with me still using his art. 
+                I was not going to go down without a fight. I continued working on the project and with each day, it kept on improving. 
+                I filled in for the art side of things with my limited pixel art experience.
+                And at the end, the game had a story and everything I was hoping for. 
+                I'm thankful I could work with my teammate for as long as I could, and I would love to work with a team again.
               </p>
 
               <a
                 className="play-button"
-                href="https://tj-liebsch.itch.io/cue-b-companion"
+                href="https://tj-liebsch.itch.io/savior-of-the-statue"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -150,24 +154,22 @@ const Cubey = () => {
           </div>
         </div>
 
-        <div className="cubey-skills">
+        <div className="statue-skills">
           <h2>Technologies & Skills</h2>
           <ul className="skills-list">
-            <li>Unity Game Engine</li>
+            <li>Unity 6 Game Engine</li>
             <li>C#</li>
-            <li>Object-Oriented Programming</li>
-            <li>2D Movement Systems</li>
-            <li>Platformer Game Development</li>
-            <li>Game State Machines</li>
-            <li>Shader Pipelines</li>
-            <li>Prototyping</li>
-            <li>Level Design</li>
-            <li>Input Handling</li>
-            <li>Collision Detection</li>
-            <li>2D Sprite Animation</li>
-            <li>Tile Set Designs</li>
-            <li>Camera Control</li>
-            <li>Persistence</li>
+            <li>Wave-Based Enemy Systems</li>
+            <li>NavMesh Pathfinding</li>
+            <li>A* Pathfinding</li>
+            <li>Procedural Node Generation</li>
+            <li>Game State Management</li>
+            <li>Gameplay Balancing</li>
+            <li>Collaborative Game Development</li>
+            <li>Unity Version Control</li>
+            <li>Communication</li>
+            <li>Agile</li>
+            <li>Perseverance</li>
           </ul>
         </div>
         <div className="projects-link">
@@ -182,4 +184,4 @@ const Cubey = () => {
   )
 }
 
-export default Cubey
+export default Statue

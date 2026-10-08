@@ -17,7 +17,8 @@ import audiobook_gen from '../../assets/images/projects/ai/justSpectograph.png'
 import pacman from '../../assets/images/projects/game/pacman.png'
 import undergrad from '../../assets/images/projects/game/undergrad.jpg'
 import aiGame from '../../assets/images/projects/game/aiGameOpening.png'
-import cubey from '../../assets/images/projects/game/Cubey2.png'
+import cubey from '../../assets/images/projects/game/Cubey Thumbnail.png'
+import statue from '../../assets/images/projects/game/Statue Map.png'
 import gameDevClass from '../../assets/images/projects/game/Class game bowling.png'
 import dnd from '../../assets/images/projects/game/D&D world map.jpg'
 
@@ -85,36 +86,12 @@ const aiImages = [
 
 const gameImages = [
   {
-    src: pacman,
-    alt: 'Pacman Project',
-    title: 'Pacman',
-    text: 'A Pacman clone that I made at the end of high school',
-    skills: 'Unity, C#, Game Design',
-    link: 'GameDevelopment/Pacman'
-  },
-  {
-    src: aiGame,
-    alt: 'AI Game Development Project',
-    title: 'AI Game Development Project',
-    text: "A truly limitless game that utilizes AI's flexibility",
-    skills: 'Unity, C#, AI Development',
-    link: 'GameDevelopment/AIGame'
-  },
-  {
-    src: gameDevClass,
-    alt: 'All Game Dev Class Games',
-    title: 'All Game Dev Class Games',
-    text: "The culmination of my projects in my game dev class",
-    skills: 'Unity, C#, Menu Systems',
-    link: 'GameDevelopment/GameDevClass'
-  },
-  {
-    src: dnd,
-    alt: 'Dungeons and Dragons',
-    title: 'Dungeons and Dragons',
-    text: "Built detailed worlds through creative storytelling",
-    skills: 'Story Telling, Problem Solving',
-    link: 'GameDevelopment/D&D'
+    src: statue,
+    alt: 'Savior of the Statue',
+    title: 'Savior of the Statue',
+    text: "Game Jam from when I worked with a team",
+    skills: 'Unity, Teamwork, Click to Move',
+    link: 'GameDevelopment/Statue'
   },
   {
     src: cubey,
@@ -125,12 +102,44 @@ const gameImages = [
     link: 'GameDevelopment/Cubey'
   },
   {
+    src: gameDevClass,
+    alt: 'All Game Dev Class Games',
+    title: 'All Game Dev Class Games',
+    text: "The culmination of my projects in my game dev class",
+    skills: 'Unity, C#, Menu Systems',
+    link: 'GameDevelopment/GameDevClass'
+  },
+  {
+    src: pacman,
+    alt: 'Pacman Project',
+    title: 'Pacman',
+    text: 'A Pacman clone that I made at the end of high school',
+    skills: 'Unity, C#, Game Design',
+    link: 'GameDevelopment/Pacman'
+  },
+  {
+    src: dnd,
+    alt: 'Dungeons and Dragons',
+    title: 'Dungeons and Dragons',
+    text: "Built detailed worlds through creative storytelling",
+    skills: 'Story Telling, Problem Solving',
+    link: 'GameDevelopment/D&D'
+  },
+  {
     src: undergrad,
     alt: 'Applied Undergraduate Research Project',
     title: 'Applied Undergraduate Research Project',
     text: 'A game made to teach the beginner concepts of C++',
     skills: 'Unity, C#, 3D Design',
     link: 'GameDevelopment/Undergraduate'
+  },
+  {
+    src: aiGame,
+    alt: 'AI Game Development Project',
+    title: 'AI Game Development Project',
+    text: "A truly limitless game that utilizes AI's flexibility",
+    skills: 'Unity, C#, AI Development',
+    link: 'GameDevelopment/AIGame'
   },
 ]
 
@@ -154,6 +163,7 @@ const fullStackImages = [
 ]
 
 const Projects = () => {
+  
   const [activeCategory, setActiveCategory] = useState("ai"); // null = show all
   const [letterClass, setLetterClass] = useState('text-animate');
   const [selectedImage, setSelectedImage] = useState({ 

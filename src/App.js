@@ -18,6 +18,7 @@ import Pacman from './components/Projects/GameDevelopment/Pacman'
 import Undergraduate from './components/Projects/GameDevelopment/Undergraduate'
 import AIGame from './components/Projects/GameDevelopment/AIGame'
 import Cubey from './components/Projects/GameDevelopment/Cubey'
+import Statue from './components/Projects/GameDevelopment/Statue'
 import GameDevClass from  './components/Projects/GameDevelopment/GameDevClass'
 import DungeonsAndDragons from  './components/Projects/GameDevelopment/D&D'
 
@@ -30,7 +31,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:category?" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/projects/ai/dynamo" element={<Dynamo />} />
@@ -42,6 +43,7 @@ function App() {
           <Route path="/projects/gameDevelopment/undergraduate" element={<Undergraduate />} />
           <Route path="/projects/gameDevelopment/aigame" element={<AIGame />} />
           <Route path="/projects/gameDevelopment/cubey" element={<Cubey />} />
+          <Route path="/projects/gameDevelopment/statue" element={<Statue />} />
           <Route path="/projects/gameDevelopment/gamedevclass" element={<GameDevClass />} />
           <Route path="/projects/gameDevelopment/d&d" element={<DungeonsAndDragons />} />
 
