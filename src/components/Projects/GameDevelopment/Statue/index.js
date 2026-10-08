@@ -4,7 +4,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom'
 // import { Unity, useUnityContext } from "react-unity-webgl";
 import statueDemo from '../../../../assets/images/projects/game/Savior of the Statue Demo.mp4'
-import statueProgress from '../../../../assets/images/projects/game/Savior of the Statue Daily Progress.mp4'
+import statueProgress from '../../../../assets/images/projects/game/Savior of the Statue Daily Progress Reduced.mp4'
 import statueMenu from '../../../../assets/images/projects/game/Statue Menu.png'
 import statueMap from '../../../../assets/images/projects/game/Statue Map.png'
 import statueTutorial from '../../../../assets/images/projects/game/Statue Tutorial.png'
