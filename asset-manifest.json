@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.9f59a328.css",
-    "main.js": "/portfolio-website/static/js/main.8486f172.js",
+    "main.css": "/portfolio-website/static/css/main.1974451b.css",
+    "main.js": "/portfolio-website/static/js/main.3b302e50.js",
     "static/js/453.2ddb282f.chunk.js": "/portfolio-website/static/js/453.2ddb282f.chunk.js",
+    "static/media/Savior of the Statue Daily Progress Reduced.mp4": "/portfolio-website/static/media/Savior of the Statue Daily Progress Reduced.93f155ca866b1da168c2.mp4",
+    "static/media/Savior of the Statue Demo.mp4": "/portfolio-website/static/media/Savior of the Statue Demo.2c36fd767048de6c7dff.mp4",
+    "static/media/Cubey Combination Demo.mp4": "/portfolio-website/static/media/Cubey Combination Demo.7cfb642a605382c3316b.mp4",
     "static/media/aiGameOpening.png": "/portfolio-website/static/media/aiGameOpening.b557cbd23b7bf283bd1f.png",
     "static/media/aiGameBlacksmith.png": "/portfolio-website/static/media/aiGameBlacksmith.1785ffe593f31867e231.png",
     "static/media/syllabus.png": "/portfolio-website/static/media/syllabus.85532db9214e9743edac.png",
@@ -10,11 +13,14 @@
     "static/media/Combat Map.png": "/portfolio-website/static/media/Combat Map.29a04b73750237c896e8.png",
     "static/media/Audiobook Spectograph.png": "/portfolio-website/static/media/Audiobook Spectograph.1036e820a5171af9a889.png",
     "static/media/Class game planets.png": "/portfolio-website/static/media/Class game planets.40bcd48c4f3703d5b24c.png",
+    "static/media/Statue Map.png": "/portfolio-website/static/media/Statue Map.132f1856718a278a6132.png",
     "static/media/firebaseAndAPI.png": "/portfolio-website/static/media/firebaseAndAPI.7210839cd76921a404ff.png",
     "static/media/LinkedIn Page.png": "/portfolio-website/static/media/LinkedIn Page.213cfb27021703b49a3f.png",
+    "static/media/Cubey Thumbnail.png": "/portfolio-website/static/media/Cubey Thumbnail.6cea08f0c5de7bb207cb.png",
     "static/media/smcApi.png": "/portfolio-website/static/media/smcApi.eda4922127bccba5a403.png",
     "static/media/justSpectograph.png": "/portfolio-website/static/media/justSpectograph.bb60c743d9a02e864bcb.png",
     "static/media/Cubey0.jpeg": "/portfolio-website/static/media/Cubey0.a2c03cc5ae0d2f6ac844.jpeg",
+    "static/media/Statue Tutorial.png": "/portfolio-website/static/media/Statue Tutorial.7d6b4fa6433bbabe3a22.png",
     "static/media/smcData.png": "/portfolio-website/static/media/smcData.bc1565db0490df16646f.png",
     "static/media/Quizify Video.gif": "/portfolio-website/static/media/Quizify Video.94b2e28f7eb1fa684923.gif",
     "static/media/Class game bowling.png": "/portfolio-website/static/media/Class game bowling.e8febc391e52284857e5.png",
@@ -22,6 +28,7 @@
     "static/media/Class game moving blocks.png": "/portfolio-website/static/media/Class game moving blocks.9c0da9b2a1b2710323e6.png",
     "static/media/Pacman Video.gif": "/portfolio-website/static/media/Pacman Video.27b0e794369ab25b2e1f.gif",
     "static/media/TJ L Resume.pdf": "/portfolio-website/static/media/TJ L Resume.0d36e87be51f07dae921.pdf",
+    "static/media/Statue Menu.png": "/portfolio-website/static/media/Statue Menu.dd8014fa314e3497dd8a.png",
     "static/media/smcWeb.png": "/portfolio-website/static/media/smcWeb.16f88de825ff97b237fc.png",
     "static/media/csharpLogo.png": "/portfolio-website/static/media/csharpLogo.456d41f630085700b5d8.png",
     "static/media/dynamo.png": "/portfolio-website/static/media/dynamo.14e893bbcb12da954ace.png",
@@ -46,12 +53,12 @@
     "static/media/Cubey2.png": "/portfolio-website/static/media/Cubey2.b8529f094f703e7a23a1.png",
     "static/media/CoolveticaRg-Regular.woff2": "/portfolio-website/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/portfolio-website/index.html",
-    "main.9f59a328.css.map": "/portfolio-website/static/css/main.9f59a328.css.map",
-    "main.8486f172.js.map": "/portfolio-website/static/js/main.8486f172.js.map",
+    "main.1974451b.css.map": "/portfolio-website/static/css/main.1974451b.css.map",
+    "main.3b302e50.js.map": "/portfolio-website/static/js/main.3b302e50.js.map",
     "453.2ddb282f.chunk.js.map": "/portfolio-website/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f59a328.css",
-    "static/js/main.8486f172.js"
+    "static/css/main.1974451b.css",
+    "static/js/main.3b302e50.js"
   ]
 }
